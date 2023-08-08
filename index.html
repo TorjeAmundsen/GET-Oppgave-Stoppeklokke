@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>GET - Stopwatch</title>
+</head>
+<body>
+    <div class="timer" id="timer">
+        <div id="timer-container">
+            <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="tenths">0</span>
+        </div>
+        <div id="lap-timer-container">
+            <span id="lap-minutes">00</span>:<span id="lap-seconds">00</span>.<span id="lap-tenths">0</span>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="start-button" onclick="startTimer()">Start</button>
+        <button id="lap-button" onclick="saveLap()">Lap</button>
+    </div>
+    <button id="reset-button" onclick="resetTimer()">Reset</button>
+    <div id="laps-container">
+        <div class="laps-label">Laps</div>
+        <hr class="solid">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
