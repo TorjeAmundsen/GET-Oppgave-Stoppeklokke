@@ -77,6 +77,7 @@ function resetTimer() {
     lapMinutes = 0;
     lapSeconds = 0;
     lapTenths = 0;
+    laps = 0;
     paused = false;
     started = false;
     minutesElement.innerText = `0${minutes}`;
